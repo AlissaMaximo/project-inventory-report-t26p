@@ -5,6 +5,7 @@ def test_create_product() -> None:
     product = Product(
         "1", "bottle", "wee", "2023/01/01", "2030/02/02", "B1", "drink"
     )
+
     assert product.id == "1"
     assert product.product_name == "bottle"
     assert product.company_name == "wee"
