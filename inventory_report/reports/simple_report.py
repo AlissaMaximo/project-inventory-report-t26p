@@ -45,9 +45,9 @@ class SimpleReport(Report):
     def generate(self) -> str:
         return (
             "Oldest manufacturing date: "
-            + self.get_oldest_manufacturing_date()
+            + f"{self.get_oldest_manufacturing_date()}\n"
             + "Closest expiration date: "
-            + self.get_nearest_expiration_date()
+            + f"{self.get_nearest_expiration_date()}\n"
             + "Company with the largest inventory: "
-            + self.get_largest_inventory_company()
+            + f"{self.get_largest_inventory_company()}\n"
         )
